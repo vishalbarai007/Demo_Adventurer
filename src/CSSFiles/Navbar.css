@@ -1,0 +1,102 @@
+
+/* Header styles */
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    width: 100%;
+    background-color: black;
+  }
+  
+  /* Progress bar styles */
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #fff9e9;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: linear-gradient(to right, #3a5533, #335544);
+    width: 0%;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    display: flex;
+    position: fixed;
+    top: -200px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #013328;
+    transition: top 0.3s;
+    z-index: 40;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px 2px #11001C;
+  }
+  
+  #navbar a {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+  }
+  
+  #navbar .navbar-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+  }
+  
+  #navbar a:hover {
+    border-radius: 50px;
+    color: #11001C;
+  }
+  
+  .NavLogo {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    margin-left: 50px;
+    background-image: url("../Images/adventurer-logo-zip-file/svg/logo-color.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .nav-item:hover {
+    background-color: #fff9e9;
+    border-radius: 50px;
+  }
+  
+  form input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    width: 100%;
+    border-radius: 20px;
+    background: #fff9e9;
+  }
+  
+  form button {
+    width: 20%;
+    border-radius: 50%;
+    padding: 5px;
+    color: black;
+    font-size: 17px;
+    margin-left: -15%;
+    cursor: pointer;
+  }
+  
+  form::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  

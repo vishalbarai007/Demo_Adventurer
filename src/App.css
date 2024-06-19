@@ -1,0 +1,99 @@
+/* General reset and body styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff9e9;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Text selection styles */
+p::selection, h1::selection, h4::selection {
+  background: #fff9e9;
+  color: #013328;
+}
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+  }
+
+  .navbar {
+      height: auto;
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  #navbar .navbar-ul {
+      flex-direction: column;
+      margin-left: 0;
+  }
+
+  .main1 {
+      width: 90%;
+      left: 5%;
+      top: 5vh;
+      padding: 10px;
+  }
+
+  .Title1 {
+      font-size: 60px;
+      margin-top: 50px;
+  }
+
+  .sub-title {
+      font-size: 30px;
+      margin-top: -75px;
+  }
+
+  .Signup-button {
+      margin-left: 30%;
+      padding: 5px;
+  }
+
+  .curved-edge, .curved-edge2 {
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+  }
+
+  .cloud-image1, .bagpack1 {
+      height: 100px;
+      width: 100px;
+  }
+
+  .Landing3-info {
+      width: 80%;
+      left: 10%;
+      top: 100vh;
+  }
+
+  .Landing3-info h1 {
+      font-size: 20px;
+  }
+
+  .Landing3-info p {
+      font-size: 15px;
+  }
+
+  .card {
+      width: 90%;
+      margin-left: 5%;
+  }
+
+  .carousel img {
+      height: auto;
+  }
+}

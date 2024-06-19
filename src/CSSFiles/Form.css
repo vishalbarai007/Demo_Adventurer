@@ -1,0 +1,76 @@
+
+.main-form {
+    background-color: #3a5533;
+  }
+  
+  .main-form .Formdiv {
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px 5px black;
+  }
+  
+  .main-form .Formleft {
+    background-image: url("../Images/adventurer-logo-zip-file/svg/logo-color.svg");
+    border-radius: 10px;
+  }
+  
+  .main-form input[type=text], input[type=password] {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px 1px rgb(98, 98, 98);
+  }
+  
+  .main-form .button2 {
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #3a5533;
+    box-shadow: 2px 2px 2px 1px rgb(77, 76, 76);
+  }
+  
+  .main-form .button2:hover {
+    background-color: #013328;
+  }
+  
+  .main-form .button3 {
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #1DA1F2;
+    box-shadow: 2px 2px 2px 1px rgb(77, 76, 76);
+  }
+  
+  .main-form .button3:hover {
+    background-color: #008ee6;
+  }
+  
+  .main-form .button4 {
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #4267B2;
+    box-shadow: 2px 2px 2px 1px rgb(77, 76, 76);
+  }
+  
+  .main-form .button4:hover {
+    background-color: rgb(5, 89, 141);
+  }
+  

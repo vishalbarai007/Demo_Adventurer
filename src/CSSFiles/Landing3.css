@@ -1,0 +1,132 @@
+.landing3 {
+    background: #3a5533;
+    padding: 50px;
+  }
+  
+  .curved-edge, .curved-edge2 {
+    --c: 70px;
+    height: 70vh;
+    width: 400px;
+    margin-top: 10vh;
+    aspect-ratio: 1;
+    background-image: url("../Images/pexels-pixabay-532803.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -50px;
+  }
+  
+  
+  .curved-edge {
+    mask: radial-gradient(var(--c) 60% at right, #0000 calc(100% - 1px), #000);
+    animation: appers1 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  
+  .curved-edge2 {
+    background-image: url("../Images/pexels-lalu-fatoni-228553-732632.jpg");
+    mask: radial-gradient(var(--c) 60% at left, #0000 calc(100% - 1px), #000);
+    margin-left: 90vh;
+    animation: appers2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  
+  .cloud-image1 {
+    position: absolute;
+    top: 125vh;
+    left: 23%;
+    height: 10vh;
+    width: 10%;
+    transition: all 1s;
+    animation: cloud1 infinite 6s ease-in-out;
+  }
+  
+  @keyframes cloud1{
+    0% {
+      transform: translateX(0px);
+    }
+    50%{
+      transform: translateX(100px);
+    }
+    100%{
+      transform: translateX(0px);
+    }
+  }
+  
+  .bagpack1 {
+    position: absolute;
+    top: 170vh;
+    left: 65%;
+    height: 200px;
+    width: 200px;
+    transition: all 1s;
+    animation: bagpack1 infinite 6s ease-in-out;
+  }
+  
+  @keyframes bagpack1{
+    0% {
+      transform: translateY(0px);
+    }
+    50%{
+      transform: translateY(-100px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }
+  
+  
+  .Landing3-info {
+    height: 80vh;
+    width: 30%;
+    position: absolute;
+    left: 40%;
+    top: 120vh;
+  }
+  
+  .Landing3-info h1 {
+    font-size: 40.45px;
+  }
+  
+  .Landing3-info p {
+    margin-top: 20px;
+    font-size: 25px;
+    color: #020d0b;
+  }
+  
+  .bagpack1:hover {
+    transform: translateY(-50px);
+  }
+  
+  .cloud-image1:hover {
+    transform: translateX(50px);
+  }
+  
+  @keyframes appers1 {
+    from {
+        opacity: 0;
+        scale: 0.5;
+        transform: translateX(-500px);
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+        transform: translateX(0px);
+    }
+  }
+  
+  @keyframes appers2 {
+    from {
+        opacity: 0;
+        scale: 0.5;
+        transform: translateX(500px);
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+        transform: translateX(0px);
+    }
+  }
+  
+  

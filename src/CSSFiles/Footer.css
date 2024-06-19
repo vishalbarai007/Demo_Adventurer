@@ -1,0 +1,61 @@
+.Footerblock{
+    height: 50vh;
+    width: 100%;
+    color: #013328;
+    position: absolute;
+    top: 610vh;
+    display: flex;
+}
+
+.Footerblock .left{
+    height: 50vh;
+    width: 70%;
+    background: #fff;
+    padding: 100px;
+    display: flex;
+    gap: 15%;
+}
+
+.Footerblock .left ul{
+    list-style: none;
+    width: 200px;
+}
+
+ul h1, .right {
+    font-size: xx-large;
+    transition: all 1s;
+}
+
+ul li:hover, ul h1:hover{
+    text-decoration: solid underline 2px #013328;
+}
+
+.Footerblock .right{
+    height: 50vh;
+    width: 30%;
+    background: #fff;
+    padding: 100px;
+    display: flex;
+    gap: 10%;
+}
+
+.lastdiv{
+    position: absolute;
+    margin-top: 150vh;
+    background: #013328;
+    color:#fff;
+
+}
+
+.lastdiv h1{
+    text-align: center;
+}
+
+.lastdiv h3{
+    text-align: center;
+    font-weight: 100;
+}
+
+
+
+

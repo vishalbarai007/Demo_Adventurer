@@ -1,0 +1,104 @@
+
+.landing4 {
+    height: 100vh;
+    background-image: url("../Images/pexels-gabby-k-7794435.jpg");
+    background-size: cover;
+  }
+  
+  .landing4-1 {
+    height: auto;
+    width: 100%;
+    background-image: url("../Images/favpng_transparency-clip-art-image-mountain.png");
+    background-size: contain;
+  }
+
+  
+.card {
+    display: inline-block;
+    width: 25%;
+    height: auto;
+    margin-top: 10vh;
+    margin-left: 6%;
+    border: 1px solid #013328;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.995);
+    background-color: #013328;
+    color: #f1f1f1;
+    text-align: center;
+    animation: cardslide linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: calc(50vh - 30px);
+    display: block;
+    transition: all 0.5s;
+    --c: 70px;
+    aspect-ratio: 1;
+    margin-bottom: -30px;
+    mask: radial-gradient(60% var(--c) at bottom, #0000 calc(100% - 2px), #000);
+  }
+  
+  .carousel img:hover {
+    transform: scale(1.1);
+  }
+  
+  .card-title {
+    font-size: 1.5em;
+    margin: 15px 20px;
+  }
+  
+  .card-description,
+  .card-location {
+    font-size: 1em;
+    margin: 10px 20px;
+  }
+  
+  /* // for creating 3 lines maximum od desc */
+  .card-description{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+  }
+  
+  .card-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    position: relative;
+    align-items: bottom;
+  }
+  
+  .card-button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .card-button:hover {
+    color: #000;
+    background-color: #fff9e9;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .card-button.favorite {
+    color: red;
+  }
+  
+  @media (width: 750px) {
+    .card {
+        display: block;
+        max-width: 750px;
+    }
+  }
+  

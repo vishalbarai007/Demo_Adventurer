@@ -1,0 +1,36 @@
+.Accounts{
+    height: 200vh;
+    width: 100%;
+    background: #fff9e9;
+    display: flex;
+}
+.Accounts .Left{
+    height: 200vh;
+    width: 30%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+
+.Accounts .Right{
+    height: 200vh;
+    width: 70%;
+    background: blue;
+    padding: 50px;
+
+}
+
+.Accountlogo{   
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    margin-top: 50px;
+    /* margin: 20px; */
+}
+
+.Right .Intro{
+    height: 300px;
+    font-size: 100px;
+}

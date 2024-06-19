@@ -1,0 +1,64 @@
+
+.landing5{
+    height: 100vh;
+    width: 100%;
+  }
+  
+  
+  .landing5 .main1{
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.3px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    min-height: 80vh;
+    width: 50%;
+    position: absolute;
+    top: 310vh;
+    left: 45%;
+    padding: 20px;
+    z-index: 4;
+    gap: 20px;
+  } 
+  
+  .main1-1{
+    height:40vh;
+    width: 100%;
+    padding: 3%;
+    background-color: #3a5533;
+    transition: all 0.5s ease-out;
+    border-radius: 20px;
+  }
+  
+  .main1-1:hover{
+    background-color: #013328;
+  }
+  
+  .main1-1 img{ 
+    height: auto;
+    width: 200px;
+  }
+  
+  .main1-1 h1{
+    font-size: 30px;
+    color: #fff9e9;
+  }
+  
+  
+  .main1-1 p{
+    font-size: 18px;
+    color: #fff9e9;
+  }
+  
+  .main1 .Title1-1{
+    /* color: #fff9e9; */
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    font-weight: 700;
+    color:#fff9e9;
+    transition: 1s;
+  
+  }
+  
