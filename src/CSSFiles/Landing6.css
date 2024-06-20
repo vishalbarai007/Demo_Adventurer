@@ -34,11 +34,6 @@
     cursor: pointer; /* Indicate that this is an interactive element */
   }
 
-  .slide-content:hover ~ .slide-text{
-    display: none;
-    visibility: hidden;
-  }
-  
   .slide-info {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
