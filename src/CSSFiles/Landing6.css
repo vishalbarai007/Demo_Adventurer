@@ -33,8 +33,16 @@
   .slide-text {
     cursor: pointer; /* Indicate that this is an interactive element */
   }
+
+  .slide-content:hover ~ .slide-text{
+    display: none;
+    visibility: hidden;
+  }
   
   .slide-info {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
     position: absolute;
     bottom: -100%; /* Start off-screen */
     left: 0;
@@ -66,9 +74,11 @@
   }
   
   .slide-info button {
+    display: flex;
+    justify-content: center;
     position: absolute;
-    margin-top: 60px;
-    margin-left: -35%;
+    margin-top: 100px;
+    margin-left: 35%;
     padding: 10px 20px;
     background-color: #013328;
     color: white;

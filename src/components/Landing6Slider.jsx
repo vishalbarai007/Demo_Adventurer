@@ -10,7 +10,6 @@ import scuba from '../Images/pexels-diego-sandoval-3158170-4767081.jpg';
 import surfer from '../Images/pexels-guy-kawasaki-783630-1654489.jpg';
 import skieer from '../Images/pexels-auspiciousajay-19822705.jpg';
 
-
 function Landing6Slider() {
   return (
     <Splide
@@ -70,6 +69,7 @@ function Landing6Slider() {
           <img src={cyclist} alt="Corporate Away Days" />
           <div className="slide-text"><p>CYCLISTS</p></div>
           <div className='slide-info'>Cyclists explore various terrains on bicycles, from roads to mountain trails.
+            <button>Learn more</button>
           </div>
         </div>
       </SplideSlide>

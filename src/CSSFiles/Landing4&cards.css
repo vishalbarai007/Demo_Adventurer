@@ -53,6 +53,9 @@
   
   .card-description,
   .card-location {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
     font-size: 1em;
     margin: 10px 20px;
   }
