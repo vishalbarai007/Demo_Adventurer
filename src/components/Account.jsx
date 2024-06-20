@@ -19,6 +19,10 @@ function Account() {
         </div>
         <div className='Content'>
 
+          <div>
+            
+          </div>
+
         </div>
 
       </div>
