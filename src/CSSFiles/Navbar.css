@@ -69,8 +69,17 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
+
+  .nav-item{
+    color: #fff9e9;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   .nav-item:hover {
+    color: #013328;
     background-color: #fff9e9;
     border-radius: 50px;
   }

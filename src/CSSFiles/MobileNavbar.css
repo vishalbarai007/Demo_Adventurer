@@ -6,20 +6,25 @@
 
 }
 
-/* .Nav-item{
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    & ul:nth-child(
-        margin: 10em;
-       
-    )
+.nav{
+    display: flex;
+    flex-direction: column;
+    & li:last-child{
+        margin-top: 60vh;
+    } 
     
-} */
+}
 
-
-.Navmob ul {
-    background-color: aqua;
-  }
+.Nav-item{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+    
+}
 
   
 .Nav-item:hover {
@@ -28,6 +33,7 @@
   }
   
   form input[type=text] {
+    margin-top: 1rem;
     padding: 10px;
     font-size: 17px;
     border: 1px solid grey;

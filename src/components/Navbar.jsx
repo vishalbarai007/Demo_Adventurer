@@ -4,6 +4,13 @@ import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 import { motion } from "framer-motion";
 import '../CSSFiles/Navbar.css'
+import { FaHome } from "react-icons/fa";
+// import { IoIosSettings } from "react-icons/io";
+import { FaTools } from "react-icons/fa";
+import { FaMicroblog } from "react-icons/fa";
+import { MdAccountCircle } from "react-icons/md";
+import { MdFlightTakeoff } from "react-icons/md";
+// import { IoLogOut } from "react-icons/io5";
 
 
 function Navbar() {
@@ -43,22 +50,27 @@ function Navbar() {
                 <motion.a className="NavLogo text-white w-1/6 p-1 flex justify-center align-middle" href="#"></motion.a>
                 <ul className="navbar-ul gap-10">
                     <motion.li className="nav-item" whileHover={{ scale: 1.2 }}>
+                        <FaHome/>
                         <Link to={"/BaseContent"} className='dropbtn text-40 text-white no-underline'>HOME</Link>
                     </motion.li>
 
                     <motion.li className="nav-item" whileHover={{ scale: 1.2 }}>
+                        <MdFlightTakeoff/>
                         <Link to={"#"} className='dropbtn text-40 text-white no-underline'>DESTINATION</Link>
                     </motion.li>
 
                     <motion.li className="nav-item" whileHover={{ scale: 1.2 }}>
+                        <FaTools/>
                         <Link to={"#"} className='dropbtn text-40 text-white no-underline'>SAFETY INFO</Link>
                     </motion.li>
 
                     <motion.li className="nav-item" whileHover={{ scale: 1.2 }}>
+                        <FaMicroblog/>
                         <Link to={"#"} className='dropbtn text-40 text-white no-underline'>BLOGS</Link>
                     </motion.li>
 
                     <motion.li className="nav-item" whileHover={{ scale: 1.2 }}>
+                        <MdAccountCircle/>
                         <Link to={"/Account"} className='dropbtn text-40 text-white no-underline'>ACCOUNT</Link>
                     </motion.li>
                     
