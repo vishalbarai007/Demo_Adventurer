@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar';
 import '../CSSFiles/Accounts.css';
+import MobileNavbar from './MobileNavbar';
 
 function Account() {
   return (
@@ -10,6 +11,11 @@ function Account() {
       <div className='Left'>
         <div className='Accountlogo'>
         </div>
+
+        <div className='MiniNav'>
+          <MobileNavbar/>
+        </div>
+
       </div>
 
       <div className='Right'>

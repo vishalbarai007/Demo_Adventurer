@@ -1,0 +1,54 @@
+.Navmob{
+    height: fit-content;
+    background: #fff;
+    margin-top: 25em;
+    padding: 3rem;
+
+}
+
+/* .Nav-item{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    & ul:nth-child(
+        margin: 10em;
+       
+    )
+    
+} */
+
+
+.Navmob ul {
+    background-color: aqua;
+  }
+
+  
+.Nav-item:hover {
+    background-color: #fff9e9;
+    border-radius: 50px;
+  }
+  
+  form input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    width: 100%;
+    border-radius: 20px;
+    background: #fff9e9;
+  }
+  
+  form button {
+    width: 20%;
+    border-radius: 50%;
+    padding: 5px;
+    color: black;
+    font-size: 17px;
+    margin-left: -15%;
+    cursor: pointer;
+  }
+  
+  form::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
