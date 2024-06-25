@@ -1,6 +1,6 @@
 .Navmob{
     height: fit-content;
-    background: #fff;
+    background: #fff9e9;
     margin-top: 25em;
     padding: 3rem;
 
@@ -28,15 +28,17 @@
 
   
 .Nav-item:hover {
-    background-color: #fff9e9;
+    /* background-color: #fff9e9; */
     border-radius: 50px;
+    background: #013328;
+    color: #fff9e9;
   }
   
   form input[type=text] {
     margin-top: 1rem;
     padding: 10px;
     font-size: 17px;
-    border: 1px solid grey;
+    border: 1px solid #013328;
     width: 100%;
     border-radius: 20px;
     background: #fff9e9;
