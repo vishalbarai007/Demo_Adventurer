@@ -2,13 +2,13 @@ import React from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 import '@splidejs/splide/dist/css/splide.min.css';
-import hiker from '../Images/pexels-ben-maxwell-479813-1194235.jpg';
-import trekker from '../Images/pexels-pavel-bondarenko-1393453-2856509.jpg';
-import camper from '../Images/pexels-atomlaborblog-776117.jpg';
-import cyclist from '../Images/pexels-fr3nks-1208777.jpg';
-import scuba from '../Images/pexels-diego-sandoval-3158170-4767081.jpg';
-import surfer from '../Images/pexels-guy-kawasaki-783630-1654489.jpg';
-import skieer from '../Images/pexels-auspiciousajay-19822705.jpg';
+import hiker from '../../Images/pexels-ben-maxwell-479813-1194235.jpg';
+import trekker from '../../Images/pexels-pavel-bondarenko-1393453-2856509.jpg';
+import camper from '../../Images/pexels-atomlaborblog-776117.jpg';
+import cyclist from '../../Images/pexels-fr3nks-1208777.jpg';
+import scuba from '../../Images/pexels-diego-sandoval-3158170-4767081.jpg';
+import surfer from '../../Images/pexels-guy-kawasaki-783630-1654489.jpg';
+import skieer from '../../Images/pexels-auspiciousajay-19822705.jpg';
 
 function Landing6Slider() {
   return (

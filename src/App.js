@@ -1,7 +1,7 @@
 // import './App.css';
 import BaseContent from './components/BaseContent';
 import Navbar from './components/Navbar';
-import Landing1 from './components/Landing1';
+import Landing1 from './components/Homepage-Landing-Components/Landing1';
 import Form from './components/Form';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Account from './components/Account';

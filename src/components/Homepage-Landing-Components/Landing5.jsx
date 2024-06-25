@@ -1,10 +1,10 @@
 import React from 'react';
-import landing5video from '../Videos/Landing5-2.mp4';
-import explore from '../Images/explore1.png';
-import equipment from '../Images/equipment1.png';
-import guide from '../Images/guide1.png';
-import adventure from '../Images/clock1.png';
-import '../CSSFiles/Landing5.css';
+import landing5video from '../../Videos/Landing5-2.mp4';
+import explore from '../../Images/explore1.png';
+import equipment from '../../Images/equipment1.png';
+import guide from '../../Images/guide1.png';
+import adventure from '../../Images/clock1.png';
+import '../../CSSFiles/Landing5.css';
 
 
 

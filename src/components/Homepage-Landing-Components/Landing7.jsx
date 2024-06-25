@@ -1,6 +1,6 @@
 import React from 'react'
-import trees2 from '../Images/tree2.png';
-import '../CSSFiles/Landing7.css';
+import trees2 from '../../Images/tree2.png';
+import '../../CSSFiles/Landing7.css';
 import Landing7cards from './Landing7cards';
 
 function Landing7() {

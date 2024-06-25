@@ -1,5 +1,7 @@
 import React from 'react'
 // import Navbar from './Navbar';
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/js/bootstrap.bundle";
 import '../CSSFiles/Accounts.css';
 import MobileNavbar from './MobileNavbar';
 import { MdAddAPhoto } from "react-icons/md";
@@ -31,17 +33,11 @@ function Account() {
         <div className='Intro'>
           <h1>Welcome to Adventurer Vishal.</h1>
         </div>
+        
         <div className='Content'>
-          
-
-          <div>
-            
-          </div>
-
         </div>
 
       </div>
-
     </div>
     
     

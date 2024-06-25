@@ -1,6 +1,6 @@
 import React, { useRef} from 'react';
-import Card from './Card';
-import '../CSSFiles/Landing4&cards.css'
+import Card from '../Card';
+import '../../CSSFiles/Landing4&cards.css'
 // import card1 from '../../public/Images/kaman1.jpg';
 
 

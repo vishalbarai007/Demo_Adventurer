@@ -1,8 +1,8 @@
 import React from 'react';
-import '../CSSFiles/Landing3.css';
+import '../../CSSFiles/Landing3.css'
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import Cardimg from '../Images/Cloud1.png'
-import Cardimg2 from '../Images/bagpack1.png';
+import Cardimg from '../../Images/Cloud1.png';
+import Cardimg2 from '../../Images/bagpack1.png';
 
 
 function Landing3() {
@@ -15,7 +15,7 @@ function Landing3() {
         <div className='block'></div>
         <div className='block'></div> */}
 
-        <img src={Cardimg2} alt="cloud image" className='bagpack1'/>
+        <img src={Cardimg2} alt="bagpack" className='bagpack1'/>
         <div className='curved-edge'>
         </div>
 
@@ -30,7 +30,7 @@ function Landing3() {
         <div className='curved-edge2'>
 
         </div>
-        <img src={Cardimg} alt="cloud image" className='cloud-image1'/>
+        <img src={Cardimg} alt="cloud" className='cloud-image1'/>
 
 
 

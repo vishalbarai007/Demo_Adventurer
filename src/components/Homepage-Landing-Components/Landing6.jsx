@@ -1,6 +1,6 @@
 import React from 'react';
 import Landing6Slider from './Landing6Slider';
-import '../CSSFiles/Landing6.css';
+import '../../CSSFiles/Landing6.css';
 
 function Landing6() {
   return (
