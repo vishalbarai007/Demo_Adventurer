@@ -15,7 +15,7 @@ function Form() {
   const [UserPassword1,setUserPassword1] = useState("");
   const [UserPassword2,setUserPassword2] = useState("");
 
-
+  // form backend handle 
   const handleSubmit = () => {
     console.log("working")
     const requestOptions = {
@@ -162,7 +162,7 @@ function Form() {
       <img src={Logo1} className='h-20 w-20 -my-16 -mx-5' alt='Logo1'/>
     </div>
 
-    <div className='Formright px-16 py-4 w-1/2 h-full '>
+    <div className='Formright px-16 py-4 h-full '>
     <form>
       <h1 className='text-black font-bold'>Sign Up</h1>
       <input type='text' placeholder='Create UserName' className='FormUser ' value={UserName1} onChange={(e) => setUserName1(e.target.value)}></input>

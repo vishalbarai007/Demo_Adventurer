@@ -13,6 +13,11 @@
     background-image: url("../Images/adventurer-logo-zip-file/svg/logo-color.svg");
     border-radius: 10px;
   }
+
+  .main-form .FormRight{
+    display: flex;
+    width: 50%;
+  }
   
   .main-form input[type=text], input[type=password] {
     width: 100%;
@@ -72,5 +77,23 @@
   
   .main-form .button4:hover {
     background-color: rgb(5, 89, 141);
+  }
+
+  @media screen and (max-width: 1000px) {
+    .Formleft{
+      visibility: hidden;
+    }
+
+    .FormRight{
+      display: flex;
+      width: 100%;
+    }
+
+    .Formdiv{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
   
