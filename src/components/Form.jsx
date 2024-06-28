@@ -11,10 +11,26 @@ import '../CSSFiles/Form.css';
 function Form() {
 
   const Navigate = useNavigate();
-  
   const [UserName1,setUserName1] = useState("");
   const [UserPassword1,setUserPassword1] = useState("");
   const [UserPassword2,setUserPassword2] = useState("");
+
+
+  const handleSubmit = () => {
+    console.log("working")
+    const requestOptions = {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body:JSON.stringify(
+        {
+          username: UserName1,
+          password: UserPassword1
+        }
+      )
+    }
+
+    const response = fetch("http://localhost:5000/register", requestOptions)
+  }
 
 
 
@@ -153,7 +169,7 @@ function Form() {
       <input type='password' placeholder='Create Password' className='FormPass1 ' value={UserPassword1} onChange={(e) => setUserPassword1(e.target.value)}></input>
       <input type='password' placeholder='Confirm Password' className='FormPass2 ' value={UserPassword2} onChange={(e) => setUserPassword2(e.target.value)}></input>
 
-      <button className='button2 text-white text-xl' onClick={Login2} >Continue</button>
+      <button className='button2 text-white text-xl' onClick={() => {Login2();handleSubmit()}} >Continue</button>
       <h6 className='m-4 text-center'>Connect with social media</h6>
 
       <button className='button3 bg-sky-500 text-white flex gap-40  hover:bg-sky-600'>
