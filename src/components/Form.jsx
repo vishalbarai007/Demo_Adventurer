@@ -111,7 +111,7 @@ function Form() {
                   
                 </div>
   
-                <div className='Formright px-16 py-16 w-1/2 h-full flex'>
+                <div className='FormRight px-16 py-16 w-1/2 h-full flex'>
                 <form>
                   <h1 className='text-black font-bold'>Sign In</h1>
                   <input type='text' placeholder='UserName' className='FormUser '   value={UserName1} onChange={(e) => setUserName1(e.target.value)}></input>
@@ -127,14 +127,14 @@ function Form() {
                     <div className=' w-1 h-full border-r-white'>
                     <FaSquareTwitter className='my-1' style={{color:"white", fontSize:"30"}}/>   
                     </div>
-                    Sign in with twitter
+                    <h3>Sign in with twitter</h3>
                   </button>
 
                   <button className='button4 bg-blue-800 text-white flex gap-40 hover:bg-blue-900' >
                     <div className=' w-1 h-full border-r-white'>
                       <FaFacebook className='my-1' style={{color:"white", fontSize:"30"}}/>
                     </div>
-                  Sign in with facebook
+                    <h3> Sign in with facebook</h3>
                   </button>
 
                   <p className='text-center m-3'> Didn't have Account ? <a className=' text-blue-600 cursor-pointer ' onClick={changeMode} >Sign up</a></p>
@@ -162,7 +162,7 @@ function Form() {
       <img src={Logo1} className='h-20 w-20 -my-16 -mx-5' alt='Logo1'/>
     </div>
 
-    <div className='Formright px-16 py-4 h-full '>
+    <div className='FormRight px-16 py-4 h-full '>
     <form>
       <h1 className='text-black font-bold'>Sign Up</h1>
       <input type='text' placeholder='Create UserName' className='FormUser ' value={UserName1} onChange={(e) => setUserName1(e.target.value)}></input>
@@ -176,14 +176,14 @@ function Form() {
         <div className=' w-1 h-full border-r-white'>
         <FaSquareTwitter className='my-1' style={{color:"white", fontSize:"30"}}/>   
         </div>
-        Sign up with twitter
+        <h3>Sign up with twitter</h3>
       </button>
 
       <button className='button4 bg-blue-800 text-white flex gap-40  hover:bg-blue-900' >
         <div className=' w-1 h-full border-r-white'>
           <FaFacebook className='my-1' style={{color:"white", fontSize:"30"}}/>
         </div>
-      Sign up with facebook
+        <h3>Sign up with facebook</h3>
       </button>
       <p className='text-center m-3'> Already Have Account ? <a className=' text-blue-600 cursor-pointer ' onClick={changeMode}>Sign In</a></p>
       </form>
