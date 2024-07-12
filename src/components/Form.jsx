@@ -127,7 +127,7 @@ function Form() {
                     <div className=' w-1 h-full border-r-white'>
                     <FaSquareTwitter className='my-1' style={{color:"white", fontSize:"30"}}/>   
                     </div>
-                    <h3>Sign in with twitter</h3>
+                    <h3 className='twitter'>Sign in with twitter</h3>
                   </button>
 
                   <button className='button4 bg-blue-800 text-white flex gap-40 hover:bg-blue-900' >
@@ -176,7 +176,7 @@ function Form() {
         <div className=' w-1 h-full border-r-white'>
         <FaSquareTwitter className='my-1' style={{color:"white", fontSize:"30"}}/>   
         </div>
-        <h3>Sign up with twitter</h3>
+        <h3 className='twitter'>Sign up with twitter</h3>
       </button>
 
       <button className='button4 bg-blue-800 text-white flex gap-40  hover:bg-blue-900' >

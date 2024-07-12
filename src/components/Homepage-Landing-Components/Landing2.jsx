@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../Button';
+// import Button from '../Button';
 
 function Landing2() {
   return (
@@ -10,7 +10,7 @@ function Landing2() {
       <h4 className='sub-title'>
         Know & Plan your Destination with Your Partner.
       </h4>
-      <Button/>
+      {/* <Button/> */}
     </div> 
   )
 }

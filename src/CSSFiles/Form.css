@@ -11,6 +11,7 @@
   
   .main-form .Formleft {
     background-image: url("../Images/adventurer-logo-zip-file/svg/logo-color.svg");
+    background-repeat: no-repeat;
     border-radius: 10px;
   }
 
@@ -79,7 +80,7 @@
     background-color: rgb(5, 89, 141);
   }
 
-
+  /* tablet mode  */
   @media screen and (min-width:500px) and (max-width: 1000px) {
     .Formleft{
       display: none;
@@ -171,7 +172,7 @@
     }
 
   }
-
+    /* Mobile mode  */
 @media (max-width:500px) {
   .Formdiv{
     width: fit-content;
@@ -193,6 +194,7 @@
   }
 
   .main-form{
+    width: min-content;
     height:100vh;
     padding:10%;
   }
@@ -233,10 +235,14 @@
     padding: 5px;
     border-radius: 5px;
     display: flex;
-    /* gap: 30%; */
+    /* gap: -50%; */
     box-sizing: border-box;
     background-color: #1DA1F2;
     box-shadow: 2px 2px 2px 1px rgb(77, 76, 76);
+  }
+
+  .main-form .button3 .twitter{
+    margin-left: -45%;
   }
   
   .main-form .button3:hover {
