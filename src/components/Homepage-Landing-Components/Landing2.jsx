@@ -4,13 +4,17 @@ import React from 'react';
 function Landing2() {
   return (
     <div className='main1'>
-      <h1 className='Title1 text-white'>
-        ADVENTURER
-      </h1>
+      
+      <div>
+     
       <h4 className='sub-title'>
         Know & Plan your Destination with Your Partner.
       </h4>
-      {/* <Button/> */}
+      <h1 className='Title1 text-white'>
+        ADVENTURER
+      </h1>
+      </div>
+    
     </div> 
   )
 }

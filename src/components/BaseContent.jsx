@@ -11,7 +11,7 @@ import Footer1 from "./Footer1";
 function BaseContent() {
   return (
     <>
-        <Navbar/>
+        {/* <Navbar/> */}
         <Landing1/>
         <Landing3/>
         <Landing4/>
