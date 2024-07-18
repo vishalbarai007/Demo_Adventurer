@@ -1,22 +1,31 @@
 .landing3 {
     background: #3a5533;
     padding: 50px;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    display: -webkit-inline-box;
+
+    /* justify-content: center; */
+
+
   }
   
   .curved-edge, .curved-edge2 {
-    --c: 70px;
+    --c: 10rem;
+    display: block;
     height: 70vh;
-    width: 400px;
+    width: 30vw;
     margin-top: 10vh;
     aspect-ratio: 1;
-    background-image: url("../Images/pexels-pixabay-532803.jpg");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position-y: -50px;
+    z-index: 2;
+    
   }
   
   
   .curved-edge {
+    background-image: url("../Images/pexels-pixabay-532803.jpg");
     mask: radial-gradient(var(--c) 60% at right, #0000 calc(100% - 1px), #000);
     animation: appers1 linear;
     animation-timeline: view();
@@ -34,7 +43,7 @@
   
   .cloud-image1 {
     position: absolute;
-    top: 125vh;
+    margin-top: 10rem;
     left: 23%;
     height: 10vh;
     width: 10%;
@@ -56,7 +65,7 @@
   
   .bagpack1 {
     position: absolute;
-    top: 170vh;
+    margin-top: 30rem;
     left: 65%;
     height: 200px;
     width: 200px;
@@ -78,11 +87,12 @@
   
   
   .Landing3-info {
-    height: 80vh;
-    width: 30%;
-    position: absolute;
-    left: 40%;
-    top: 120vh;
+    height: fit-content;
+    width:30vw;
+    position: relative;
+    margin-left: 10vw;
+    margin-top: 10vh;
+
   }
   
   .Landing3-info h1 {
@@ -128,5 +138,102 @@
         transform: translateX(0px);
     }
   }
+
+  @media screen and (max-width:768px) {
+    .landing3 {
+      background: #3a5533;
+      padding: 3rem;
+      overflow-x: hidden;
   
+    }
+    
+    .curved-edge{
+      --c: 5rem;
+      height: 70vh;
+      width: 40vw;
+      margin-top: 10vh;
+      aspect-ratio: 1;
+      background-image: url("../Images/pexels-pixabay-532803.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+    }
+    
+    
+    .curved-edge {
+      mask: radial-gradient(var(--c) 60% at right, #0000 calc(100% - 1px), #000);
+      animation: appers1 linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%;
+    }
+    
+    .curved-edge2 {
+      display: none;
+    }
+    
+    .Landing3-info {
+      height: fit-content;
+      width:50vw;
+      position: absolute;
+      margin-top: -2rem;
+      margin-left: 30vw;
+    }
+    
+    .Landing3-info h1 {
+      font-size: 30.45px;
+    }
+    
+    .Landing3-info p {
+      margin-top: 20px;
+      font-size: 20.45px;
+      color: #020d0b;
+    }
+    
+  }
+  
+
+  
+
+  @media screen and (max-width:450px) {
+    .landing3 {
+      background: #3a5533;
+      padding: 3rem;
+      overflow-x: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .curved-edge, .curved-edge2{
+      display: none;
+    }
+    
+    .Landing3-info {
+      height: fit-content;
+      width:fit-content;
+      /* margin-left: 0%; */
+      position: sticky;
+      overflow: hidden;
+
+    }
+    
+    .Landing3-info h1 {
+      font-size: 30.45px;
+    }
+    
+    .Landing3-info p {
+      margin-top: 20px;
+      font-size: 20.45px;
+      color: #020d0b;
+    }
+
+    .cloud-image1{
+      display: none;
+    }
+
+    .bagpack1{
+      display: none;
+    }
+    
+  }
   

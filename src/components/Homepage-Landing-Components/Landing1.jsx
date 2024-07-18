@@ -6,7 +6,7 @@ import '../../CSSFiles/Landing1&2.css'
 function Landing1() {
   return (
     <>
-    <div className='backvideo bg-zinc-500'>
+    <div className='backvideo'>
       <video autoPlay muted loop id='video' className='video'>
         <source src={landing1video} type="video/mp4" /> 
       </video>

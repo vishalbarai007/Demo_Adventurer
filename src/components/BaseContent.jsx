@@ -14,10 +14,10 @@ function BaseContent() {
         {/* <Navbar/> */}
         <Landing1/>
         <Landing3/>
-        <Landing4/>
+        {/* <Landing4/> */}
         <Landing5/>
         <Landing6/>
-        <Landing7/>
+        {/* <Landing7/> */}
         <Footer1/>
     </>
 

@@ -14,34 +14,34 @@ function Landing5() {
   return (
     <>
         <div className='landing5'>
-            <video autoPlay muted loop id='video' className='z-10'>
+            <video autoPlay muted loop id='video' className='video z-10'>
                 <source src={landing5video} type="video/mp4" /> 
             </video>
 
-            <div className='main1'>
+            <div className='container1'>
                 <h1 className='Title1-1'>
                     WE PROVIDE BEST HIKING AND TREKKING TO YOUR JOURNEY.
                 </h1>
                 <div className='right flex gap-5 my-20'>
-                <motion.div className='main1-1' whileHover={{ scale: 1.2 }}>
+                <motion.div className='container1-1' whileHover={{ scale: 1.2 }}>
                     <img src={explore} alt="explore/mountains" className='' />
                     <h1>Exploration</h1>
                     <p>Explore the Beauty of Nature</p>
                 </motion.div>
 
-                <motion.div className='main1-1' whileHover={{ scale: 1.2 }}>
+                <motion.div className='container1-1' whileHover={{ scale: 1.2 }}>
                     <img src={equipment} alt="explore/mountains" className='' />
                     <h1>Equipment</h1>
                     <p>Right Equipment for Different Places</p>
                 </motion.div>
 
-                <motion.div className='main1-1' whileHover={{ scale: 1.2 }}>
+                <motion.div className='container1-1' whileHover={{ scale: 1.2 }}>
                     <img src={guide} alt="explore/mountains" className='' />
                     <h1>Guide</h1>
                     <p>Highly Expirence & Certified Guides</p>
                 </motion.div>
 
-                <motion.div className='main1-1' whileHover={{ scale: 1.2 }}>
+                <motion.div className='container1-1' whileHover={{ scale: 1.2 }}>
                     <img src={adventure} alt="explore/mountains" className='' />
                     <h1>Adventure</h1>
                     <p>Fill your Heart with Thrills</p>

@@ -1,7 +1,8 @@
 .backvideo{
-  height: 100vh;
+  background-color: #3a5533;
   width: 100vw;
   z-index: -1;
+  overflow-x: hidden;
 }
 
 /* Main content styles */
@@ -22,6 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-y: hidden;
 
   }
   
@@ -83,6 +85,8 @@
         display: flex;
         align-items: flex-start;
         justify-content: center;
+        position: sticky;
+
         
     
       }
@@ -151,6 +155,9 @@
         /* align-items: flex-start; */
         align-items: center;
         justify-content: center;
+        position: sticky;
+        scrollbar-width: none;
+
         
     
       }
