@@ -31,6 +31,8 @@
   .Landing7Card {
     position: absolute;
     margin-top: 20vh;
+    /* overflow-x: hidden; */
+    
   }
   
   :root {
@@ -51,7 +53,8 @@
     padding: 4rem;
     margin: 0 auto;
     height: 50vh;
-    width: 100%;
+    /* width: 10vw; */
+    
   }
   
   .Landing7Card .card1, .Landing7Card .card2, .Landing7Card .card3  {
@@ -253,5 +256,19 @@
     .info h1 {
       margin: 0;
     }
+
+    .Landing7Card .cards-wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10rem;
+    padding: 4rem;
+    margin: 0 auto;
+    height: 50vh;
+    /* width: 10vw; */
+    
+  }
+  
   }
   
