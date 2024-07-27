@@ -16,7 +16,8 @@ function Form() {
   const [UserPassword2,setUserPassword2] = useState("");
 
   // form backend handle 
-  const handleSubmit = () => {
+  // sign up page handler
+  const handleRegister = () => {
     console.log("working")
     const requestOptions = {
       method: 'POST',
@@ -33,6 +34,52 @@ function Form() {
   }
 
 
+  // login page handler
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    console.log("working");
+
+    const LoginOptions = {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body:JSON.stringify(
+        {
+          username: UserName1,
+          password: UserPassword1
+        }
+      )
+    }
+
+    const response = await fetch("http://localhost:5000/login", LoginOptions);
+    const data = await response.json();
+    console.log(data);
+
+    
+    if(data.success){
+      alert("Login Successful");
+      localStorage.setItem('token', data.token);
+      Navigate("/BaseContent");
+
+
+
+    }
+    else if (UserName1 == "" ||  UserPassword1 == "") {
+
+      alert("Please enter UserId and password.")
+      
+    }else if(!data.success){
+      if(data.message === "User does not exists"){
+        alert("User does not exist");
+      }
+      else{
+        alert("Invalid Password");
+      }
+    }
+  }
+
+
+
+
 
 
   let [Mode, setFormMode] = useState("SignUp")
@@ -41,39 +88,6 @@ function Form() {
     setFormMode(Mode === "SignIn" ? "SignUp":"SignIn")
   }
 
-
-  const Login1 = () => {
-
-    let UserId = document.querySelector(".FormUser").value;
-    let Userpass = document.querySelector(".FormPass").value;
-
-
-    if (UserId == UserName1 && Userpass == UserPassword1) {
-      if (UserId == "" ||  Userpass == "") {
-
-        alert("Please enter UserId and password.")
-        
-      } else {
-
-        alert("Login Successful");
-        Navigate("/BaseContent");
-        // Navigate("/Account");
-        // <Account Username= "vishal" />
-        
-      }
-
-    } else {
-      if(UserId != UserName1)
-        {
-          alert("Invalid UserName");
-        }
-      else
-        {
-          alert("Invalid Password");
-        }
-      
-    }
-  }
 
 
   const Login2 = () => {
@@ -95,11 +109,11 @@ function Form() {
   }
 
 
-  const Copy1 = () => {
-      alert("Copying is not allowed."); 
-      return false; 
+  // const Copy1 = () => {
+  //     alert("Copying is not allowed."); 
+  //     return false; 
 
-  } 
+  // } 
 
   if(Mode === "SignIn"){
     return (
@@ -117,7 +131,7 @@ function Form() {
                   <input type='text' placeholder='UserName' className='FormUser '   value={UserName1} onChange={(e) => setUserName1(e.target.value)}></input>
                   <input type='password' placeholder='Password' className='FormPass '   value={UserPassword1} onChange={(e) => setUserPassword1(e.target.value)}></input>
   
-                  <button className='button2 text-white text-xl' onClick={Login1} >Continue</button>
+                  <button className='button2 text-white text-xl' onClick={handleLogin} >Continue</button>
                   <Link to= {"./ForgotPass"} className=' text-blue-600 cursor-pointer' > Forgot Password ? </Link>
 
                   
@@ -169,7 +183,7 @@ function Form() {
       <input type='password' placeholder='Create Password' className='FormPass1 ' value={UserPassword1} onChange={(e) => setUserPassword1(e.target.value)}></input>
       <input type='password' placeholder='Confirm Password' className='FormPass2 ' value={UserPassword2} onChange={(e) => setUserPassword2(e.target.value)}></input>
 
-      <button className='button2 text-white text-xl' onClick={() => {Login2();handleSubmit()}} >Continue</button>
+      <button className='button2 text-white text-xl' onClick={() => {Login2();handleRegister()}} >Continue</button>
       <h6 className='m-4 text-center'>Connect with social media</h6>
 
       <button className='button3 bg-sky-500 text-white flex gap-40  hover:bg-sky-600'>
