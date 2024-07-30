@@ -102,7 +102,7 @@ function Form() {
     } 
     else {
 
-      alert(`Sign up successfully.\n UserID: ${UserId} User password: ${UserPassword1}`);
+      alert("Sign up successfully.");
       setFormMode(Mode = "SignIn");
     }
 
