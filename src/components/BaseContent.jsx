@@ -25,7 +25,7 @@ function BaseContent() {
         'Authorization': `Bearer ${token}`
       }
     }
-    const response = await fetch("http://localhost:5000/verify", requestOptions);
+    const response = await fetch("https://adventurer-backend-production.up.railway.app/verify", requestOptions);
     const data = await response.json();
     console.log(data);
     if (data.valid == true) {
