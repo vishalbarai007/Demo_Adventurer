@@ -14,6 +14,8 @@ function Form() {
   const [UserName1,setUserName1] = useState("");
   const [UserPassword1,setUserPassword1] = useState("");
   const [UserPassword2,setUserPassword2] = useState("");
+ 
+
 
   // form backend handle 
   // sign up page handler
@@ -76,10 +78,6 @@ function Form() {
       }
     }
   }
-
-
-
-
 
 
   let [Mode, setFormMode] = useState("SignUp")

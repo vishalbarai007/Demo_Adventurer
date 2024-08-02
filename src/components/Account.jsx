@@ -5,8 +5,33 @@ import React from 'react'
 import '../CSSFiles/Accounts.css';
 import MobileNavbar from './MobileNavbar';
 import { MdAddAPhoto } from "react-icons/md";
+import { useState, useEffect } from 'react';
 
-function Account() {
+  const Account = (props) => {
+
+    const [username, setUsername] = useState("");
+  
+    const fetchUserData = async () => {
+      const RequestOptions = {
+        method: "POST",
+        headers:{
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          userid: props.id
+        })
+      }
+      const response = await fetch("http://localhost:5000/get-user-data", RequestOptions);
+      const data = await response.json();
+  
+      setUsername(data.username);
+    }
+    useEffect(() => {
+      fetchUserData();
+    },[props.id])  
+  
+
+
   return (
     <>
     <div className='Accounts'>
@@ -31,7 +56,7 @@ function Account() {
 
       <div className='Right'>
         <div className='Intro'>
-          <h1>Welcome to Adventurer Vishal.</h1>
+          <h1>Welcome to Adventurer {username}.</h1>
         </div>
         
         <div className='Content'>
@@ -43,6 +68,8 @@ function Account() {
     
     </>
   )
+
 }
+
 
 export default Account;
