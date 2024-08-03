@@ -32,7 +32,7 @@ function Form() {
       )
     }
 
-    const response = fetch("https://adventurer-backend-production.up.railway.app/register", requestOptions)
+    const response = fetch("http://localhost:5000/register", requestOptions)
   }
 
 
@@ -52,7 +52,7 @@ function Form() {
       )
     }
 
-    const response = await fetch("https://adventurer-backend-production.up.railway.app/login", LoginOptions);
+    const response = await fetch("http://localhost:5000/login", LoginOptions);
     const data = await response.json();
     console.log(data);
 
