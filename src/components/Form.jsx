@@ -61,9 +61,6 @@ function Form() {
       alert("Login Successful");
       localStorage.setItem('token', data.token);
       Navigate("/BaseContent");
-
-
-
     }
     else if (UserName1 == "" ||  UserPassword1 == "") {
 
@@ -204,7 +201,7 @@ function Form() {
   </div>
   
 </div> 
-      </div>
+</div>
           
       
       </>
