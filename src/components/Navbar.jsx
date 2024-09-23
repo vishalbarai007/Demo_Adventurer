@@ -66,7 +66,7 @@ function Navbar() {
 
                     <motion.li className="nav-item" whileHover={{ scale: 1.2 }}>
                         <FaMicroblog/>
-                        <Link to={"#"} className='dropbtn text-40 text-white no-underline'>BLOGS</Link>
+                        <Link to={"/Blogs"} className='dropbtn text-40 text-white no-underline'>BLOGS</Link>
                     </motion.li>
 
                     <motion.li className="nav-item" whileHover={{ scale: 1.2 }}>

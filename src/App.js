@@ -4,6 +4,7 @@ import Form from './components/Form';
 import BaseContent from './components/BaseContent';
 import Landing1 from './components/Homepage-Landing-Components/Landing1';
 import Account from './components/Account';
+import Blogs from './components/Blogs';
 // import ProtectedRoute from './components/ProtectedRoutes';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path='/Landing1' element={<Landing1 />} />
         <Route path='/form' element={<Form />} />
         <Route path='/Account' element={<Account />} />
+        <Route path='/Blogs' element={<Blogs />} />
         <Route path='/BaseContent' element={<BaseContent/>} />
         {/* <Route
           path='/'

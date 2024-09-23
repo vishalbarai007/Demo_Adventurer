@@ -3,7 +3,8 @@
     width: 100%;
     color: #013328;
     position: absolute;
-    top: 610vh;
+    /* top: 610vh; */
+    margin-top: 100vh;
     display: flex;
 }
 
