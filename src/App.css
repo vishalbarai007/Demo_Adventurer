@@ -100,3 +100,9 @@ p::selection, h1::selection, h4::selection {
       height: auto;
   }
 }
+
+.destinations-page {
+    height: 100vh;
+    width: 100vw;
+  background-color: #000000;
+}

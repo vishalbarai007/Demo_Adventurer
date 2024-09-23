@@ -5,6 +5,7 @@ import BaseContent from './components/BaseContent';
 import Landing1 from './components/Homepage-Landing-Components/Landing1';
 import Account from './components/Account';
 import Blogs from './components/Blogs';
+import Destinations from './components/Destinations';
 // import ProtectedRoute from './components/ProtectedRoutes';
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
         <Route path='/form' element={<Form />} />
         <Route path='/Account' element={<Account />} />
         <Route path='/Blogs' element={<Blogs />} />
+        <Route path='/Destinations' element={<Destinations />} />
+
         <Route path='/BaseContent' element={<BaseContent/>} />
         {/* <Route
           path='/'

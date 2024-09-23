@@ -56,7 +56,7 @@ function Navbar() {
 
                     <motion.li className="nav-item" whileHover={{ scale: 1.2 }}>
                         <MdFlightTakeoff/>
-                        <Link to={"#"} className='dropbtn text-40 text-white no-underline'>DESTINATION</Link>
+                        <Link to={"/Destinations"} className='dropbtn text-40 text-white no-underline'>DESTINATION</Link>
                     </motion.li>
 
                     <motion.li className="nav-item" whileHover={{ scale: 1.2 }}>
